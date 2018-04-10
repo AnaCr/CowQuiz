@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anala.cowquiz.ActivityQuizP4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Part 4 -->
+        <ImageView
+            android:src="@drawable/cow4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_size"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:text="@string/part4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txtsize_reg"
+            android:gravity="center"
+            android:padding="@dimen/reg_padding"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <!-- Question 9 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/reg_padding"
+            android:text="@string/Q9"
+            android:textColor="@android:color/black" />
+
+        <CheckBox
+            android:id="@+id/Q9_first_correct_answer_CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/checkbox_padding"
+            android:text="@string/Q9A"/>
+
+        <CheckBox
+            android:id="@+id/Q9_second_correct_answer_CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/checkbox_padding"
+            android:text="@string/Q9B"/>
+
+        <CheckBox
+            android:id="@+id/Q9_third_correct_answer_CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/checkbox_padding"
+            android:text="@string/Q9C"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/checkbox_padding"
+            android:text="@string/Q9D"/>
+
+        <!-- Question 10. -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/reg_padding"
+            android:text="@string/Q10"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="@dimen/reg_margin"/>
+
+        <CheckBox
+            android:id="@+id/Q10_first_correct_answer_CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/checkbox_padding"
+            android:text="@string/Q10A"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/checkbox_padding"
+            android:text="@string/Q10B"/>
+
+        <CheckBox
+            android:id="@+id/Q10_second_correct_answer_CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/checkbox_padding"
+            android:text="@string/Q10C"/>
+
+        <CheckBox
+            android:id="@+id/Q10_third_correct_answer_CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/checkbox_padding"
+            android:text="@string/Q10D"/>
+
+        <Button
+            android:text="@string/end_quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/reg_padding"
+            android:onClick="endQuiz_showScore"/>
+
+    </LinearLayout>
+
+</ScrollView>

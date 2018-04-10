@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Margins, Padding, Drawable Size -->
+    <dimen name="reg_margin">16dp</dimen>
+    <dimen name="reg_padding">8dp</dimen>
+    <dimen name="image_size">250dp</dimen>
+    <dimen name="checkbox_padding">24dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="txtsize_lg">34sp</dimen>
+    <dimen name="txtsize_reg">20sp</dimen>
+</resources>

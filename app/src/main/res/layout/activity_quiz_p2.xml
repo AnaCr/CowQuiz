@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anala.cowquiz.ActivityQuizP2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Part 2 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_size"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cow2" />
+
+        <TextView
+            android:text="@string/part2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txtsize_reg"
+            android:gravity="center"
+            android:padding="@dimen/reg_padding"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <!-- Question 4 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/reg_padding"
+            android:text="@string/Q4"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/Q4_response"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/fill_in_hint"
+            android:inputType="textCapSentences"
+            android:layout_margin="@dimen/reg_margin"/>
+
+        <!-- Question 5 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/reg_padding"
+            android:text="@string/Q5"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/Q5_response"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/fill_in_hint"
+            android:inputType="textCapSentences"
+            android:layout_margin="@dimen/reg_margin"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="continueToPartThree"
+            android:text="@string/next" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Cow Quiz</string>
+    <string name="question_text">How much do you know about cows?</string>
+    <string name="find_out">Find out with this quiz!</string>
+    <string name="name_edittext_hint">Name</string>
+    <string name="good_luck">Good luck, </string>
+    <string name="email_subject">\'s score on the Cow Quiz</string>
+
+    <!-- Part Headers -->
+    <string name="part1">Part 1: Multiple Choice Questions</string>
+    <string name="part2">Part 2: Fill in the Blank</string>
+    <string name="part3">Part 3: True or False</string>
+    <string name="part4">Part 4: Select All That Apply</string>
+
+    <!-- Buttons -->
+    <string name="begin">begin!</string>
+    <string name="next">next</string>
+    <string name="end_quiz">Done! Show my score!</string>
+    <string name="share_score">share my score</string>
+    <string name="retake">retake</string>
+
+    <!-- Question 1 -->
+    <string name="Q1">1. \t What is a heifer?</string>
+    <string name="Q1A">an uncastrated male bovine animal</string>
+    <string name="Q1B">a young female cow that has not borne a calf</string>
+    <string name="Q1C">a young cow or bull</string>
+    <string name="Q1D">an animal of a breed of cattle with long horns</string>
+
+    <!-- Question 2 -->
+    <string name="Q2">2. \t Which dairy breed has the most cows in the U.S.?</string>
+    <string name="Q2A">Brown Swiss</string>
+    <string name="Q2B">Guernsey</string>
+    <string name="Q2C">Holstein</string>
+    <string name="Q2D">Jersey</string>
+
+    <!-- Question 3 -->
+    <string name="Q3">3. \t What is the average life span of a cow?</string>
+    <string name="Q3A">31 years</string>
+    <string name="Q3B">48 years</string>
+    <string name="Q3C">22 years</string>
+    <string name="Q3D">25 years</string>
+
+    <!-- Question 4 -->
+    <string name="Q4">4. \t No two cows have the same ________ pattern.</string>
+    <string name="fill_in_hint">Response</string>
+
+    <!-- Question 5 -->
+    <string name="Q5">5. \t While many animals only see in black and white, cows see in color except the color _________.</string>
+
+    <!-- Question 6 -->
+    <string name="Q6">6. \t The first American cows arrived with the British in 1611 at the Jamestown colony.</string>
+    <string name="true_option">true</string>
+    <string name="false_option">false</string>
+
+    <!-- Question 7 -->
+    <string name="Q7">7. \t A cow\'s stomach has 2 compartments.</string>
+
+    <!-- Question 8 -->
+    <string name="Q8">8. \t Today, all farmers rely on milking cows by hand.</string>
+
+    <!-- Question 9 -->
+    <string name="Q9">9. \t What characterizes a cow\'s mouth? Select all that apply.</string>
+    <string name="Q9A">no upper front teeth</string>
+    <string name="Q9B">tough pad of skin on their top jaw</string>
+    <string name="Q9C">relatively immobile upper lip</string>
+    <string name="Q9D">40 sharp teeth</string>
+
+    <!-- Question 10 -->
+    <string name="Q10">10. \t Which of the following are true about a cow\'s senses? Select all that apply.</string>
+    <string name="Q10A">Cows can detect odors up to five miles away.</string>
+    <string name="Q10B">Cows do not have taste buds.</string>
+    <string name="Q10C">Cows are able to hear lower and higher frequencies better than humans.</string>
+    <string name="Q10D">Cows have almost total 360 degree panoramic vision</string>
+
+    <!-- End Quiz Score Summary -->
+    <string name="thanks">Thanks for taking this quiz!</string>
+    <string name="score_summary_header">score summary</string>
+    <string name="name">Name:</string>
+    <string name="correct_answers">\nCorrect Answers:</string>
+    <string name="incorrect_answers">\nIncorrect Answers:</string>
+    <string name="score">\nScore: </string>
+</resources>
