@@ -58,6 +58,7 @@
             android:text="@string/Q9C"/>
 
         <CheckBox
+            android:id="@+id/Q9_incorrect_answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="@dimen/checkbox_padding"
@@ -81,6 +82,7 @@
             android:text="@string/Q10A"/>
 
         <CheckBox
+            android:id="@+id/Q10_incorrect_answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="@dimen/checkbox_padding"

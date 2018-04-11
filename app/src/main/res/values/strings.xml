@@ -4,7 +4,6 @@
     <string name="find_out">Find out with this quiz!</string>
     <string name="name_edittext_hint">Name</string>
     <string name="good_luck">Good luck, </string>
-    <string name="email_subject">\'s score on the Cow Quiz</string>
 
     <!-- Part Headers -->
     <string name="part1">Part 1: Multiple Choice Questions</string>
@@ -15,8 +14,7 @@
     <!-- Buttons -->
     <string name="begin">begin!</string>
     <string name="next">next</string>
-    <string name="end_quiz">Done! Show my score!</string>
-    <string name="share_score">share my score</string>
+    <string name="end_quiz">Submit</string>
     <string name="retake">retake</string>
 
     <!-- Question 1 -->

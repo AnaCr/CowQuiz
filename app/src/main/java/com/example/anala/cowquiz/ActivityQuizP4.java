@@ -31,19 +31,23 @@ public class ActivityQuizP4 extends AppCompatActivity {
         boolean hasQ9Option2 = Q9SecondResponseCheckBox.isChecked();
         CheckBox Q9ThirdResponseCheckBox = findViewById(R.id.Q9_third_correct_answer_CheckBox);
         boolean hasQ9Option3 = Q9ThirdResponseCheckBox.isChecked();
+        CheckBox Q9IncorrectResponseCheckBox = findViewById(R.id.Q9_incorrect_answer);
+        boolean hasQ9IncorrectOption = Q9IncorrectResponseCheckBox.isChecked();
 
         CheckBox Q10FirstResponseCheckBox = findViewById(R.id.Q10_first_correct_answer_CheckBox);
         boolean hasQ10Option1 = Q10FirstResponseCheckBox.isChecked();
-        CheckBox Q10SecondResponseCheckBox = findViewById(R.id.Q10_second_correct_answer_CheckBox);
-        boolean hasQ10Option2 = Q10SecondResponseCheckBox.isChecked();
-        CheckBox Q10ThirdResponseCheckBox = findViewById(R.id.Q10_third_correct_answer_CheckBox);
+        CheckBox Q10IncorrectResponseCheckBox = findViewById(R.id.Q10_incorrect_answer);
+        boolean hasQ10IncorrectOption = Q10IncorrectResponseCheckBox.isChecked();
+        CheckBox Q10ThirdResponseCheckBox = findViewById(R.id.Q10_second_correct_answer_CheckBox);
         boolean hasQ10Option3 = Q10ThirdResponseCheckBox.isChecked();
+        CheckBox Q10FourthResponseCheckBox = findViewById(R.id.Q10_third_correct_answer_CheckBox);
+        boolean hasQ10Option4 = Q10FourthResponseCheckBox.isChecked();
 
         //Update the # of correct answers
-        if(hasQ9Option1 && hasQ9Option2 && hasQ9Option3){
+        if(hasQ9Option1 && hasQ9Option2 && hasQ9Option3 && !hasQ9IncorrectOption){
             ActivityBeginQuizP1.CorrectAnswers = ActivityBeginQuizP1.CorrectAnswers + 1;
         }
-        if(hasQ10Option1 && hasQ10Option2 && hasQ10Option3){
+        if(hasQ10Option1 && hasQ10Option3 && hasQ10Option4 && !hasQ10IncorrectOption){
             ActivityBeginQuizP1.CorrectAnswers = ActivityBeginQuizP1.CorrectAnswers + 1;
         }
 

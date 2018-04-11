@@ -20,15 +20,15 @@ public class ActivityQuizP2 extends AppCompatActivity {
     public void continueToPartThree(View view) {
         //Check answers for Part 2
         EditText Q4AnswerEditText = findViewById(R.id.Q4_response);
-        String Q4response = Q4AnswerEditText.getText().toString();
+        String Q4response = Q4AnswerEditText.getText().toString().toLowerCase().trim();
         EditText Q5AnswerEditText = findViewById(R.id.Q5_response);
-        String Q5response = Q5AnswerEditText.getText().toString();
+        String Q5response = Q5AnswerEditText.getText().toString().toLowerCase().trim();
 
         //Update the # of correct answers
-        if(Q4response.equals("spot") || Q4response.equals("Spot")){
+        if(Q4response.equals("spot")){
             ActivityBeginQuizP1.CorrectAnswers = ActivityBeginQuizP1.CorrectAnswers +1;
         }
-        if(Q5response.equals("red") || Q5response.equals("Red")){
+        if(Q5response.equals("red")){
             ActivityBeginQuizP1.CorrectAnswers = ActivityBeginQuizP1.CorrectAnswers +1;
         }
 

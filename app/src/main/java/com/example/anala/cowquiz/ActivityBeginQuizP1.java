@@ -1,9 +1,11 @@
 package com.example.anala.cowquiz;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
@@ -16,6 +18,8 @@ public class ActivityBeginQuizP1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_begin_quiz_p1);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+        //TODO: call all find views by id here
 
         // display the good luck message include the Name
         TextView textView = findViewById(R.id.goodluck_textview);

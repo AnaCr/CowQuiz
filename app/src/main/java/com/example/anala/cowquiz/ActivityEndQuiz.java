@@ -39,6 +39,7 @@ public class ActivityEndQuiz extends AppCompatActivity {
      * */
     public void retakeQuiz(View view) {
         // start MainActivity & reset all metrics
+
         MainActivity.Name = "";
         ActivityBeginQuizP1.CorrectAnswers = 0;
         Intent intent = new Intent(this, MainActivity.class);

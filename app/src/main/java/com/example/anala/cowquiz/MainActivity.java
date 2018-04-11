@@ -1,6 +1,7 @@
 package com.example.anala.cowquiz;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,10 +12,12 @@ public class MainActivity extends AppCompatActivity {
     /** variables */
     public static String Name;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
     }
 
     /**
@@ -23,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
     public void beginQuiz(View view) {
         // start next activity & send it the Name
         Intent intent = new Intent(this, ActivityBeginQuizP1.class);
-        EditText editText = findViewById(R.id.name_field);
-        Name = editText.getText().toString();
+        EditText NameEditText = findViewById(R.id.name_field);
+        Name = NameEditText.getText().toString();
         startActivity(intent);
 
     }
