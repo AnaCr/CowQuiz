@@ -12,6 +12,7 @@ public class ActivityEndQuiz extends AppCompatActivity {
     /** variables */
     public static int TotalNumberOfQuestions = 10;
     public static int PointsPerQuestion = 10;
+    String passOrFail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,12 +23,22 @@ public class ActivityEndQuiz extends AppCompatActivity {
         int incorrectAnswers = TotalNumberOfQuestions - ActivityBeginQuizP1.CorrectAnswers;
         int score = ActivityBeginQuizP1.CorrectAnswers * PointsPerQuestion;
 
+        //Determine if they passed or failed the quiz
+        //A score greater than 60% is required to pass
+        if(score > 60){
+            passOrFail = getString(R.string.pass);
+        }
+        else{
+            passOrFail = getString(R.string.fail);
+        }
+
 
         //Score summary text
         String scoreSummary = getString(R.string.name)+ " " + MainActivity.Name +
                 getString(R.string.correct_answers)+ " " + ActivityBeginQuizP1.CorrectAnswers +
                 getString(R.string.incorrect_answers) + " " + incorrectAnswers +
-                getString(R.string.score) + " " + score + "%";
+                getString(R.string.score) + " " + score + "%" +
+                passOrFail;
 
         // Capture the layout's TextView and set the score summary string as its text
         TextView textView = findViewById(R.id.score_summary_text_view);

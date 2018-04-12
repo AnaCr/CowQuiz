@@ -103,12 +103,22 @@
             android:text="@string/Q10D"/>
 
         <Button
+            android:id="@+id/sumbit_button"
             android:text="@string/end_quiz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="@dimen/reg_padding"
-            android:onClick="endQuiz_showScore"/>
+            android:onClick="submitScore"/>
+
+        <Button
+            android:id="@+id/view_score_summary_button"
+            android:text="View my Score Summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/reg_padding"
+            android:onClick="showScoreSummary"/>
 
     </LinearLayout>
 

@@ -17,10 +17,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityBeginQuizP1" />
+        <activity android:name=".ActivityBeginQuizP1"
+            android:configChanges="orientation|screenSize"/>
         <activity android:name=".ActivityQuizP2" />
-        <activity android:name=".ActivityQuizP3" />
-        <activity android:name=".ActivityQuizP4" />
+        <activity android:name=".ActivityQuizP3"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".ActivityQuizP4"
+            />
         <activity android:name=".ActivityEndQuiz"></activity>
     </application>
 

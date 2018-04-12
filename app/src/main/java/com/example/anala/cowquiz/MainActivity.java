@@ -10,14 +10,12 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 
     /** variables */
-    public static String Name;
-
+    public static String Name = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
     }
 
     /**
@@ -29,6 +27,5 @@ public class MainActivity extends AppCompatActivity {
         EditText NameEditText = findViewById(R.id.name_field);
         Name = NameEditText.getText().toString();
         startActivity(intent);
-
     }
 }

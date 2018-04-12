@@ -7,23 +7,47 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ActivityQuizP4 extends AppCompatActivity {
+
+    /** Variables */
+    public static int PointsPerQuestion = 10;
+    Button viewScoreSummaryButton;
+    Button submitButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_p4);
+
+        viewScoreSummaryButton = findViewById(R.id.view_score_summary_button);
+        submitButton = findViewById(R.id.sumbit_button);
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //when submit button is clicked show the view my score summary button
+                viewScoreSummaryButton.setVisibility(View.VISIBLE);
+
+                //Calculate the score & show it as a toast
+                int score = ActivityBeginQuizP1.CorrectAnswers * PointsPerQuestion;
+                String scoreToastMessage = getString(R.string.score_toast_message) + " " + score;
+                Toast.makeText(getApplicationContext(), scoreToastMessage, Toast.LENGTH_LONG)
+                        .show();
+            }
+        });
+        viewScoreSummaryButton.setVisibility(View.INVISIBLE);
     }
 
     /**
      * Called when the user taps the Next button
      * */
-    public void endQuiz_showScore(View view) {
+    public void submitScore(View view) {
         //Check answers for Part 4
         CheckBox Q9FirstResponseCheckBox = findViewById(R.id.Q9_first_correct_answer_CheckBox);
         boolean hasQ9Option1 = Q9FirstResponseCheckBox.isChecked();
@@ -50,10 +74,14 @@ public class ActivityQuizP4 extends AppCompatActivity {
         if(hasQ10Option1 && hasQ10Option3 && hasQ10Option4 && !hasQ10IncorrectOption){
             ActivityBeginQuizP1.CorrectAnswers = ActivityBeginQuizP1.CorrectAnswers + 1;
         }
+    }
 
-        // start next activity
+    public void showScoreSummary (View view){
+        // start next activity where user can view their score summary
         Intent intent = new Intent(this, ActivityEndQuiz.class);
         startActivity(intent);
     }
+
+
 
 }
